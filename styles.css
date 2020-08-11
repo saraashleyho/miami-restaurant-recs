@@ -62,9 +62,22 @@ h1 {
   padding: 20px;
 }
 
+#controls {
+  margin: 14rem auto 1rem auto;
+  font-family: "Lobster", cursive;
+  font-size: 14pt;
+  color: black;
+  padding: 1rem;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  place-items: center;
+}
+
 main {
   position: relative;
-  top: 250px;
+  top: 20px;
   margin: 0 3rem 3rem 3rem;
 }
 
@@ -193,6 +206,11 @@ h5 {
 .great-for li {
   list-style: none;
   font-size: 10pt;
+}
+
+#pie-chart {
+  max-width: 30rem;
+  margin: 5rem auto;
 }
 
 @media (max-width: 860px) {

@@ -27,13 +27,55 @@
         Food Recs From Friends
       </div>
     </header>
-
+    <div id="controls">
+      <div>
+        <label for="cuisine">Cuisine</label>
+        <select id="cuisine">
+          <option>All</option>
+          <option>American</option>
+          <option>Asian Fusion</option>
+          <option>Chinese</option>
+          <option>Japanese</option>
+          <option>Indian</option>
+          <option>Steakhouse</option>
+          <option>Italian</option>
+          <option>Latin American</option>
+          <option>Mediterranean</option>
+          <option>Mexican</option>
+          <option>Seafood</option>
+          <option>Vegan / Vegetarian / Healthy Eats</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="occasion">Occasion</label>
+        <select id="occasion">
+          <option>All</option>
+          <option>A Quick Bite</option>
+          <option>Casual Dining</option>
+          <option>Date Night</option>
+          <option>Happy Hour / Cocktails</option>
+          <option>Special Occasions</option>
+          <option>Healthy Options</option>
+          <option>Coffee</option>
+          <option>Group Dinners</option>
+          <option>Outdoor Seating</option>
+          <option>Kids & Families</option>
+          <option>Breakfast/Brunch</option>
+        </select>
+      </div>
+      <div>
+        <label for="search">Search</label>
+        <input id="search" type="text" autocomplete="off" />
+      </div>
+    </div>
     <main>
       <section id="user-responses">
         <p class="loading">Great Food Loading...</p>
       </section>
+      <canvas id="pie-chart" width="400" height="400"></canvas>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js"></script>
     <script src="data.js"></script>
   </body>
